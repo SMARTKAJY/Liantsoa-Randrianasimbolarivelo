@@ -4,7 +4,7 @@
 
 int main() {
     int a, b, c;
-    std::cout << "Entrez les trois longueurs des côtés du triangle : ";
+    std::cout << "Entrez les trois longueurs des côtés du triangle : "std::endl;
     std::cin >> a >> b >> c;
 
     // Vérifier si les longueurs peuvent former un triangle
@@ -15,13 +15,18 @@ int main() {
 
     // Classer le triangle
     std::string type;
-    if (a == b && b == c) {
+    if (a == b && b == c) 
+    {
         type = "équilatéral";
-    } else if (a == b || b == c || a == c) {
+    } 
+    else if (a == b || b == c || a == c) 
+    {
         type = "isocèle";
-    } else {
+    } 
+    else {
         type = "scalène";
     }
+    
     std::cout << "Le triangle est " << type << "." << std::endl;
 
     // Déterminer si le triangle est rectangle
